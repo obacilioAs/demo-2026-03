@@ -1,0 +1,38 @@
+.container-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.health-meter-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ring-wrapper {
+    position: relative;
+    padding: 1rem;
+}
+
+.text-yellow {
+    color: #bfa000;
+}
+
+/* Custom coloring for progress ring to ensure it really pops (fallback if variant styling is subtle) */
+.ring-green lightning-progress-ring {
+    --sds-c-progress-ring-color-background: #04844b;
+}
+
+.ring-yellow lightning-progress-ring {
+    --sds-c-progress-ring-color-background: #ffb75d;
+}
+
+.ring-red lightning-progress-ring {
+    --sds-c-progress-ring-color-background: #c23934;
+}
+
+.health-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
